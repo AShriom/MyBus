@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.app.mybus.SignupActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textView10"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sign yourself up!!"
+        android:id="@+id/textView9"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold|italic" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView4">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAlignment="center"
+                android:id="@+id/suui"
+                android:hint="Username"
+                android:layout_weight="1"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAlignment="center"
+                android:id="@+id/sufn"
+                android:hint="Enter Full Name"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAlignment="center"
+                android:id="@+id/supw"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Date Of Birth"
+                android:id="@+id/sudob"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:onClick="showDOBPickerDialog"
+                android:textAlignment="center" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAlignment="center"
+                android:id="@+id/suem"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAlignment="center"
+                android:id="@+id/sucn"
+                android:hint="Contact No."
+                android:inputType="number"
+                android:layout_weight="1"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Submit"
+
+                    android:id="@+id/susb"
+                    android:layout_weight="1"
+                    android:onClick="submit"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Reset"
+                    android:id="@+id/surb"
+                    android:layout_weight="1"
+                    android:onClick="reset"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+

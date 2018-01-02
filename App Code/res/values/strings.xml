@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyBus</string>
+    <string-array name="category">
+        <item>AC</item>
+        <item>Non-AC</item>
+    </string-array>
+</resources>

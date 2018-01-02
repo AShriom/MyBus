@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.app.mybus.AdminActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Add a new Bus"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold|italic"
+        android:singleLine="false"
+        android:padding="5dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAlignment="center"
+                android:id="@+id/bid"
+                android:hint="5 Digit Bus ID"
+                android:layout_weight="1"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAlignment="center"
+                android:id="@+id/bname"
+                android:hint="Enter Bus Name"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAlignment="center"
+                android:id="@+id/src"
+                android:hint="Source City"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAlignment="center"
+                android:id="@+id/dest"
+                android:hint="Destination City"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/time"
+                android:text="Departure Time (hh:mm 24hr)"
+                android:layout_weight="1"
+                android:onClick="showTimePickerDialog"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAlignment="center"
+                android:id="@+id/fare"
+                android:hint="Bus Fare"
+                android:inputType="number"
+                android:layout_weight="1"
+                android:singleLine="true" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAlignment="center"
+                android:id="@+id/seats"
+                android:hint="Total Seats"
+                android:inputType="number"
+                android:layout_weight="1"
+                android:singleLine="true" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Add Bus"
+                    android:id="@+id/admadd"
+                    android:layout_weight="1"
+                    android:onClick="addbus"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Reset"
+                    android:id="@+id/admrb"
+                    android:layout_weight="1"
+                    android:onClick="reset"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+
